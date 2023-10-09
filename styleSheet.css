@@ -1,0 +1,478 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: grey ;
+    font: 1em sans-serif;
+    scroll-behavior: smooth;
+
+}
+a:link {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(48, 116, 219);
+
+}
+  
+a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(48, 116, 219);  
+
+}
+  
+a:hover {
+    text-decoration: none;
+    cursor:pointer;
+    color: rgb(48, 116, 219);
+
+}
+  
+a:active {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(48, 116, 219);  
+
+}
+hr{
+    opacity: 0.6;
+}
+.mainCon{
+    background-color: rgb(255, 255, 255);
+    width: 403px;
+    height: 824px;
+    margin: auto;
+}
+.headLine{
+    display:inline;
+}
+.groups{
+    margin-left: 10px;
+    color: rgb(48, 116, 219);
+}
+.contactHidden{
+    opacity: 0;
+    margin-left: 25%;
+}
+.addNewNumber{
+    background-color: white;
+    position: relative;
+    right: -146px;
+    width: 10px;
+    margin-top: 0px;
+    margin-right: 10px;
+    color: rgb(48, 116, 219);
+    font-size: 20px;
+    cursor: pointer;
+}
+.searchBar , #searchBarId{
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#searchBarId{
+    height: 30px;
+    margin: 0;
+    font-size: larger;
+    width: 100%;
+    font-weight: lighter;
+}
+.largeContact{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 10px;
+}
+hr { 
+    display: block;
+    background-color: lightgrey;
+    width: 95%;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+  } 
+.myInformation{
+    display: flex;
+}
+.myImage{
+    background-color: grey;
+    text-align: center;
+    line-height: 65px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    border: 1px solid grey;
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    margin: 10px ;
+}
+.myName{
+    padding-top: 0px;
+    padding-left: 6px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.myCardSpan{
+    color: rgb(124, 117, 117);
+    font-size: small;
+    font-weight: lighter;
+    padding: 0%;
+}
+P.alphabet{
+    float: right;
+    display: inline;
+    margin-right: 2px;
+    font-size: 13px;
+    color: rgb(48, 116, 219);
+    position: relative;
+    top: -448px;
+
+}
+.A , .B , .C , .D , .E , .F , .G , .H , .I , .J , .K , .L , .M , .N , .O , .P , .Q , .R , .S , .T , .U , .V , .W , .X , .Y , .Z , .noAlphabet {
+    display: inline;
+    color: rgb(124, 117, 117);
+    font-weight: 700;
+    font-size: small;
+    position: relative;
+    left: 6px;
+}
+.contacts{
+    width: 96%;
+    height: 522px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.contacts::-webkit-scrollbar{
+    display: none;
+}
+.listOfContacts{
+    position: relative;
+    top: 0px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 8px;
+}
+.footer{
+    background-color: rgb(247, 247, 247);
+    border-top: 1px solid grey;
+}
+button{
+    background-color: white;
+    margin: 0px;
+    width: 24.17%;
+    padding: 0px;
+    border: 0cm;
+}
+.butConFotr{
+    background-color: white;
+    margin: 0px;
+    width: 23.28%;
+    padding: 0px;
+    border: 0cm;
+}
+.iconFav , .iconCon , .iconKey , .iconRec , .voiceMail{
+    width: 30%;
+    color: rgb(68, 66, 66);
+}
+.iconKey , .voiceMail{
+    opacity: 73%;
+}
+.iconFav:hover , .iconCon:hover , .iconKey:hover , .iconRec:hover , .voiceMail:hover , .addNewNumberRec:hover , .favButton:hover {
+    opacity: 60%;
+}
+img{
+    width: 100%;
+}
+input[type="search"]:focus{
+    outline: none;
+}
+.newCon{
+    font-size: large;
+    position: relative;
+    left: 6px;
+    display: inline;
+    color: black;
+    text-align: left;
+    padding-left: 10px;
+    opacity: 1;
+}
+
+.conNewItem{
+    list-style: none;
+    width: 110%;
+    border-bottom: 1px solid rgb(205, 202, 202);
+    height: 30px;
+    position: relative;
+    top: 10px;
+}
+.newName{
+    position: relative;
+    top: -3px;
+    padding-right: 10px;
+}
+.trashButton{
+    background: grey;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    width: 12px;
+    position: relative;
+    left: 348px;
+    top: -25px;
+}
+
+.trashButtonIcon{
+    width: 100%;
+}
+.fade{
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+
+/* keypad html style*/
+
+.dialNumber{
+    margin: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.buttonStyle{
+    font-size: 40px;
+    width: 26%;
+    height: 82px;
+    border: 0.1px solid white;
+    border-radius: 100%;
+    margin: 10px;
+}
+.buttonStyle:hover{
+    opacity: 60%;
+    cursor: pointer;
+}
+.number1{
+    position: relative;
+    top: 5.5px;
+}
+.alphabetInButton{
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 4px;
+    padding: 0px;
+    margin: 0px;
+}
+.numberHold{
+    border: none;
+    display: block;
+    width: 90%;
+    height: 46px;
+    font-size: 35px;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 96px;
+    margin-bottom: 80px;
+}
+.addNumberText{
+    text-align: center;
+    color: #2480fcf0;
+    visibility: hidden;
+}
+.addNumberText:hover{
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.callAndRemove{
+    margin-bottom: 20px;
+    align-items: center;
+}
+.call{
+    width: 20.3%;
+    height: 50px;
+    margin-left: 157px;
+}
+.removeStyle{
+    padding-bottom: 28px;
+    align-content: baseline;
+    position: relative;
+    font-size: 22px;
+    margin-left: 10px;
+    width: 28px;
+    height: 24px;
+    top: -32px;
+    text-align: center;
+    left: 31px;
+    visibility: hidden;
+    border: 1px solid transparent;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.removeStyle:hover{
+    opacity: 60%;
+    cursor: pointer;
+}
+.footerKeyPad{
+    background-color: rgb(247, 247, 247);
+    border-top: 1px solid grey;
+}
+
+/* modeule Add Contacts Style*/
+.mainConMod{
+    background-color: #e3e3e3;
+}
+.cancelInModule{
+    color: rgb(48, 116, 219);
+    float: left;
+    direction: ltr;
+    position: relative;
+    top: 2px;
+    right: -14px;
+}
+.doneInModule{
+    color: rgb(48, 116, 219);
+    float: right;
+    direction: rtl;
+    position: relative;
+    top: -32px;
+    right: 17px;
+}
+.headerInModule{
+    color: black;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    top: 41px;
+    right: 25px;
+}
+.inputForm{
+    margin-left: 5px;
+    margin-top: 4px;
+    padding-left: 7px;
+    width: 96%;
+    height: 50px;
+    border: 1px transparent;
+    border-radius: 20px;
+
+}
+.imageCon{
+    width: 190px;
+    position: relative;
+    left: 86px;
+    padding: 17px;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    background-color: grey;
+}
+.photo{
+    background-color: #e3e3e3;
+    margin-top: 94px;
+    height: 290px;
+}
+.addPhoto{
+    color: rgb(48, 116, 219);
+    text-align: center;
+}
+
+.favoriteButtonIcon{
+    width: 22px;
+    float: right;
+    position: absolute;
+    right: 75px;
+    bottom: 13px;
+    cursor: pointer;
+}
+.dialForm{
+    padding: 3px;
+}
+label{
+    padding-left: 20px;
+}
+/* favorite style */
+.bodyFavCon{
+    background-color: white;
+    width: 100%;
+    height: 662px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.bodyFavCon::-webkit-scrollbar{
+    display: none;
+}
+.headFav{
+    padding: 10px;
+    border-bottom: 2px double grey;
+    border-end-end-radius: 20px;
+    border-block-end-color: rgb(48, 116, 219);
+    margin-bottom: 0;
+    padding-bottom: 48px;
+}
+.addNewFav{
+    background-color: white;
+    position: relative;
+    right: -297px;
+    width: 10px;
+    margin-top: 0px;
+    margin-right: 10px;
+    color: rgb(48, 116, 219);
+    font-size: 20px;
+    cursor: pointer;
+}
+.conImage{
+    background-color: grey;
+    text-align: center;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    border: 1px solid grey;
+    border-radius: 100%;
+    padding: 7px 12px;
+    margin: 10px;
+}
+.favNewItem{
+    list-style: none;
+    width: 110%;
+    border-bottom: 1px solid rgb(205, 202, 202);
+    height: 40px;
+    position: relative;
+    top: 10px;
+}
+.bodyRecCon{
+    background-color: white;
+    width: 100%;
+    height: 662px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.bodyRecCon::-webkit-scrollbar{
+    display: none;
+}
+.called{
+    width: 20px;
+    padding: 0px 10px;
+    position: relative;
+    top: 3px;
+}
+.groupsFav{
+    font-size: 30px;
+    font-weight: 800;
+    padding-left: 14px;
+    text-shadow: 1px 1px 2px black;
+}
+.addNewNumberRec{
+    background-color: white;
+    position: relative;
+    right: -217px;
+    width: 10px;
+    margin-top: 0px;
+    margin-right: 10px;
+    color: rgb(48, 116, 219);
+    font-size: 20px;
+    cursor: pointer;
+}
